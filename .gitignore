@@ -1,6 +1,15 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+public String sumOfArray(String [] arr){
+  int num = arr.length;
+  String finalstr ="";
+  for (int x=0; x<num; x++)
+  {
+     if (x<(num-1))
+     {
+        finalstr += arr[x]+" ";
+     }
+     else{
+        finalstr += arr[x];
+     }
+  }
+  return finalstr;
+}
